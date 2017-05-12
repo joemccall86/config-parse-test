@@ -23,6 +23,9 @@ apply plugin:"asset-pipeline"
 repositories {
     mavenLocal()
     maven { url "https://repo.grails.org/grails/core" }
+
+    //Temporary:  See:  https://github.com/bluesliverx/grails-spring-security-oauth2-provider/issues/126
+    maven { url "http://dl.bintray.com/bluesliverx/grails-plugins" }
 }
 
 dependencies {
@@ -46,6 +49,8 @@ dependencies {
     testCompile "org.grails.plugins:geb"
     testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
+
+    compile 'org.grails.plugins:spring-security-oauth2-provider:3.0.0-RC2'
 }
 
 bootRun {

@@ -36,3 +36,5 @@ if (Environment.isDevelopmentMode() && targetDir != null) {
 root(ERROR, ['STDOUT'])
 
 logger('grails.plugin.springsecurity.SpringSecurityUtils', TRACE, ['STDOUT'], false)
+logger('grails.app.services.config.parse.test.ReadConfigService', INFO, ['STDOUT'], false)
+logger('config.parse.test.SecondaryConfigLoader', INFO, ['STDOUT'], false)

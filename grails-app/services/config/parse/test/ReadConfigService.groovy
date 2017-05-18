@@ -21,8 +21,11 @@ class ReadConfigService implements GrailsConfigurationAware {
 
     def serviceMethod() {
 
+        log.info "value1 = $value1"
+        log.info "value2 = $value2"
+
         assert value1 == value2
 
-        println "serviceMethod called"
+        log.info 'service method called'
     }
 }
